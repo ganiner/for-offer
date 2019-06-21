@@ -4,9 +4,12 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-int *twoSum(int *nums, int numsSize, int target,int *returnSize)
+/*
+ * 执行错误？？？编译错误？？？
+ */
+int *twoSum(int *nums, int numsSize, int target)
 {
-    returnSize = (int *)malloc(2 * sizeof(int));
+    int *returnSize = (int *)malloc(2 * sizeof(int));
     for (int i = 0; i < numsSize; i++)
     {
         int num=target-nums[i];
@@ -32,10 +35,10 @@ int main(int argc,char **argv,char **envp){
         {
             scanf("%d",&nums[i]);
         }
-        int target,*res;
+        int target;
         scanf("%d",&target);
-        int *result=twoSum(nums,numsSize,target,res);
-        printf("%d,%d\n", result[0], result[1]);
+        int *res=twoSum(nums,numsSize,target);
+        printf("%d,%d\n", res[0], res[1]);
         free(res);
     }
     return 0;
