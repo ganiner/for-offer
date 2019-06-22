@@ -28,12 +28,29 @@ class Solution2:
             dic[nums[i]] = i
         return list()
 
+
+# O(nlogn)
+# 先对nums的索引进行排序,首尾递归,两边扫
+class Solution3:
+    def twoSum(self,nums:list,target:int) -> list:
+        length = len(nums)
+        numIndexs = sorted(range(length),key=lambda k:nums[k])
+        head,tail = 0,length-1
+        sum = nums[numIndexs[head]]+nums[numIndexs[tail]]
+        while sum != target:
+            if sum > target:
+                tail -= 1
+            else:
+                head += 1
+            sum = nums[numIndexs[head]]+nums[numIndexs[tail]]
+        return sorted([numIndexs[head], numIndexs[tail]], reverse=False)
+
 def main():
     while 1:
         nums=[int(x) for x in input().split()]
         target=int(input())
         # print(Solution1().twoSum(nums,target))
-        print(Solution2().twoSum(nums, target))
+        print(Solution3().twoSum(nums, target))
 
 if __name__ == "__main__":
     main()
