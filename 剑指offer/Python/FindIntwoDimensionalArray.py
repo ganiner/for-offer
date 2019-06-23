@@ -13,7 +13,8 @@ class Solution1:
 class Solution2:
     # array 二维列表
     def Find(self, target, array):
-        pass
+        res=False
+        
 
 def main():
     array=[
