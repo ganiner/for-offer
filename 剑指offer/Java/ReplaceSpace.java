@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Solution {
+class Solution1 {
     public String replaceSpace(StringBuffer str) {
         int spaceCount = 0;
         int strLength = str.length();
@@ -28,6 +28,20 @@ class Solution {
         return str.toString();
     }
 }
+/*
+ * 利用Java自带的replace函数
+ */
+class Solution2 {
+    public String replaceSpace(StringBuffer str) {
+        int length = str.length();
+        for (int i = 0; i < length; i++) {
+            if(str.charAt(i)==' '){
+                str.replace(i, i+1, "%20");
+            }
+        }
+        return str.toString();
+    }
+}
 
 public class ReplaceSpace {
     public static void main(String[] args) {
@@ -35,7 +49,8 @@ public class ReplaceSpace {
         while (in.hasNext()) {
             String str = in.next();
             StringBuffer stringBuffer = new StringBuffer(str);
-            System.out.println(new Solution().replaceSpace(stringBuffer));
+            System.out.println(new Solution1().replaceSpace(stringBuffer));
+            System.out.println(new Solution2().replaceSpace(stringBuffer));
         }
     }
 }
