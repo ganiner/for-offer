@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -27,6 +28,15 @@ bool Find(int *matrix,int rows,int columns,int number){
         return found;
     }
 }
+
+class Solution
+{
+public:
+    bool Find(int target, vector<vector<int>> array)
+    {
+        return false;
+    }
+};
 
 int main(int argc,char **argv,char **envp){
     return 0;
