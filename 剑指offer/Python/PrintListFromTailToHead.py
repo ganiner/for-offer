@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/local/bin/python3 
 # -*- coding:utf-8 -*-
 
 class ListNode:
@@ -19,7 +19,14 @@ class Solution:
             return res[::-1]
 
 def main():
-    pass
+    while 1:
+        vals=[int(x) for x in input().split()]
+        listNode = ListNode(vals[0]);
+        l=listNode
+        for i in range(1,len(vals)):
+            listNode.next = ListNode(vals[i])
+            listNode = listNode.next
+        print(Solution().printListFromTailToHead(l))
 
 if __name__=="__main__":
     main()
