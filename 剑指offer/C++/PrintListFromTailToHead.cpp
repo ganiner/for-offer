@@ -33,6 +33,22 @@ public:
 
 int main(int argc, char **argv, char **envp)
 {
-    
+    int n, val;
+    while (cin >> n)
+    {
+        ListNode *head = new ListNode(0);
+        ListNode *p = head;
+        while (n--)
+        {
+            cin >> val;
+            head->next = new ListNode(val);
+            head = head->next;
+        }
+        vector<int> res = Solution().printListFromTailToHead(p->next);
+        for (vector<int>::iterator iter = res.begin(); iter != res.end(); iter++)
+        {
+            cout << (*iter) << endl;
+        }
+    }
     return 0;
 }
