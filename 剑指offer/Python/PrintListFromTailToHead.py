@@ -6,7 +6,7 @@ class ListNode:
         self.val = x
         self.next = None
 
-
+# 遍历链表,按顺序存到list中,最后把list反转
 class Solution:
     # 返回从尾部到头部的列表值序列，例如[1,2,3]
       def printListFromTailToHead(self, listNode):
