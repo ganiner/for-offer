@@ -4,3 +4,4 @@
 |[大整数相乘](https://www.nowcoder.com/practice/0f0badf5f2204a6bb968b0955a82779e)|拼多多|no|no|no|no|
 |[六一儿童节](https://www.nowcoder.com/practice/d2dfc62bf1ba42679a0e358c57da9828)|拼多多|no|no|no|no|
 |[迷宫寻路](https://www.nowcoder.com/practice/e3fc4f8094964a589735d640424b6a47)|拼多多|no|no|no|no|
+|[等差数列](https://www.nowcoder.com/practice/e11bc3a213d24fc1989b21a7c8b50c3f)|网易|[C++](EqualDifferenceSeries.cpp)]|no|no|no|
