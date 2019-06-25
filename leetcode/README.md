@@ -4,3 +4,4 @@
 |002|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)|Medium|[C++](https://github.com/GGG1235/for-offer/blob/master/leetcode/C++/AddTwoNumbers.cpp)|[Python](https://github.com/GGG1235/for-offer/blob/master/leetcode/Python/AddTwoNumbers.py)|[Golang](https://github.com/GGG1235/for-offer/blob/master/leetcode/Golang/AddTwoNumbers.go)|no|no|
 |003|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)|Medium|no|no|no|no|no|
 |004|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|Hard|no|no|no|no|no|
+|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)|Easy|no|no|no|[Java](https://github.com/GGG1235/for-offer/blob/master/leetcode/Java/MaxProfit.java)|no|
