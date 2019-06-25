@@ -17,6 +17,7 @@
 3
  */
 
+// 找规律,被3除余0或2的下标可以被3整除
 #include <iostream>
 
 using namespace std;
