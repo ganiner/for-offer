@@ -17,6 +17,7 @@ func maxProfit(prices []int) int {
 	return res
 }
 
+/*
 func main() {
 	var count int
 	for {
@@ -31,3 +32,4 @@ func main() {
 		fmt.Println(maxProfit(prices))
 	}
 }
+*/
