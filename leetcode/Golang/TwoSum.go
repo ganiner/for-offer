@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func twoSum1(nums []int, target int) []int {
 	length := len(nums)
 	res := make([]int, 0)
@@ -37,6 +35,7 @@ func twoSum2(nums []int, target int) []int {
 	return res
 }
 
+/*
 func main() {
 	var numSize, num, target int
 	for {
@@ -55,3 +54,4 @@ func main() {
 		fmt.Printf("%d,%d\n", res[0], res[1])
 	}
 }
+*/
