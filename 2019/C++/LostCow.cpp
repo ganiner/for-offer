@@ -13,3 +13,41 @@ LRR
 输出
 E
  */
+
+//+1左转,-1右转,上北下南左西右东
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+const char directions[4] = {'N', 'W', 'S', 'E'};
+
+int main(int argc, char **argv, char **envp)
+{
+    int n;
+    string a;
+    while (cin >> n)
+    {
+        cin >> a;
+        int length = (int)a.size();
+        int origin = 0;
+        for (int i = 0; i < length; i++)
+        {
+            if (a[i] == 'L')
+            {
+                origin += 1;
+            }
+            else
+            {
+                origin -= 1;
+            }
+            origin = origin % 4;
+        }
+        if (origin < 0)
+        {
+            origin += 4;
+        }
+        cout << directions[origin] << endl;
+    }
+    return 0;
+}
